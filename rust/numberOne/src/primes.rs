@@ -1,8 +1,9 @@
-pub fn prime_listing(ceiling_value: usize)->Vec<u32>{
+pub fn prime_listing(ceiling_value: usize)->Vec<usize>{
     let mut prime_list = Vec::with_capacity(ceiling_value);
     for count in 1..ceiling_value{
-        
+        if is_prime(count) {prime_list.push(count)};
     };
+    prime_list
 }
 
 fn is_prime(num: usize)->bool{
@@ -18,5 +19,5 @@ fn prime_decision(num:usize)->bool{
             divider_count += 1;
         };
     };
-    if divider_count == 2 {true} else  {false}
+    if divider_count == 2 { true } else { false }
 }

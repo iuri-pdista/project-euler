@@ -5,5 +5,5 @@
 mod primes;
 
 fn main() {
-    primes::prime_listing();
+    //primes::prime_listing();
 }
