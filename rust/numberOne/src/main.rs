@@ -2,8 +2,8 @@
 // use std::io::prelude::*;
 // use std::env;
 
-mod prime;
+mod primes;
 
 fn main() {
-    prime::prime_listing();
+    primes::prime_listing();
 }
