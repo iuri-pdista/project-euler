@@ -7,7 +7,7 @@ pub fn prime_listing(ceiling_value: usize)->Vec<usize>{
     prime_list
 }
 
-fn is_prime(num: usize)->bool{
+pub fn is_prime(num: usize)->bool{
     let is_prime: bool;
     is_prime = prime_decision(num);
     if is_prime { true } else { false }
@@ -18,7 +18,6 @@ fn prime_decision(num:usize)->bool{
     for i in 1..num{
         if (num % i) == 0{
             divider_count += 1;
-            println!("{}{}",num,divider_count);
         };
     };
     if divider_count == 1 { true } else { false }
