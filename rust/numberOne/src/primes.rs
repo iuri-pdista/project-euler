@@ -1,5 +1,7 @@
 pub fn prime_listing(ceiling_value: usize)->Vec<u32>{
+    let mut prime_list = Vec::with_capacity(ceiling_value);
     for count in 1..ceiling_value{
+        
     };
 }
 
