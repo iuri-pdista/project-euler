@@ -1,8 +1,6 @@
-pub fn prime_listing(/*ceiling_value: usize*/)/*->Vec<u32>*/{
-    let eurt: bool = is_prime(10);
-    println!("{:?}",eurt);
-    // for count in 1..ceiling_value{
-    // };
+pub fn prime_listing(ceiling_value: usize)->Vec<u32>{
+    for count in 1..ceiling_value{
+    };
 }
 
 fn is_prime(num: usize)->bool{
