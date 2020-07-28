@@ -5,5 +5,6 @@
 mod primes;
 
 fn main() {
-    //primes::prime_listing();
+    let list: Vec<usize>= primes::prime_listing(10);
+    println!("{:?}",list);
 }
